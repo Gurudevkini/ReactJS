@@ -1,40 +1,20 @@
 import { useState } from "react";
-
+import AppName from "./Components/appname";
+import AddTodo from "./Components/addtodo";
+import TodoItem1 from "./Components/Todoitem1";
+import TodoItem2 from "./Components/Todoitem2";
+import "./App.css";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <center>
-      <div className="container text-center">
-        <h1>TODO React App</h1>
-
-        <div className="row">
-          <div className="col-6">
-            <input type="text" placeholder="Enter Todo Here" />
-          </div>
-
-          <div className="col-4">
-            <input type="date" />
-          </div>
-
-          <div className="col-2">
-            <button type="button" className="btn btn-success">
-              Add
-            </button>
-          </div>
-        </div>
-
-        <div className="row mt-3">
-          <div className="col-6">Buy Milk</div>
-          <div className="col-4">4/01/2023</div>
-          <div className="col-2">
-            <button type="button" className="btn btn-danger">
-              Delete
-            </button>
-          </div>
-        </div>
+    <center className="todo-container">
+      <AppName></AppName>
+      <AddTodo></AddTodo>
+<div className="item-Container">
+      <TodoItem1></TodoItem1>
+      <TodoItem2></TodoItem2>
       </div>
-    </center>
+    
+</center>
   );
 }
 
