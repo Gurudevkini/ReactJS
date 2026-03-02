@@ -1,8 +1,39 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import Fooditems from "./Components/Fooditems";
+import Errormsg from "./Components/errorMessage";
 import React from "react";
 function App() {
-  /* 18.learning the concept of fragments
+    const fooditems = ['Gobi','Mysore pak',"Panner","Gobi-chilly"];
+const  fooditems1 =[];
+  return ( <>
+  
+  <Errormsg items={fooditems1}></Errormsg>
+  <Fooditems items={fooditems}></Fooditems>
+
+
+ </>
+);
+}
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* 18.learning the concept of fragments
   
   when you JSX CODE IS RETURNING IT SHOULD 
   BE RETURNED IN A SINGLE TAG So raping everything in <div> or <center>
@@ -78,13 +109,23 @@ using if
 
  using ternary operators 
  {fooditems1.length===0 ? <h3> I AM STILL HUNGRY</h3>: null}
-
-
-*/
-let fooditems =['Gobi','Mysore pak', "Panner","Gobi-chilly"];
-let fooditems1 =[];
+ ANOTHER method U CAN use is 
 let emptyMessgae=fooditems1.length===0 ? <h3> I AM STILL HUNGRY</h3>: null
-console.log(emptyMessgae)
+console.log(emptyMessgae) 
+IF ITS NULL THAN IT WOULDNT EFFECT THE CODE 
+
+using logical operations 
+should be inside the JSX condition 
+return <>
+(
+{fooditems1.length===0  && <h3> I AM STILL HUNGRY</h3>}
+):
+</>
+*/
+//let fooditems =['Gobi','Mysore pak', "Panner","Gobi-chilly"];
+
+
+//console.log(emptyMessgae)
 //  return( 
 // <>
 //     <h1>SUNDAY CANTEEN FOODS </h1>
@@ -92,15 +133,36 @@ console.log(emptyMessgae)
 //        {
 //         fooditems.map(item =>
 //         <li key={item} className="list-group-item">{item}</li>
-//       )}
+//       )
 //     </ul>
 // </>
 //   );
-}
-export default App;
+
+  
 
 /* MOST IMP NOTES:-
 if you use class than it will give error in the console
 insted of that use className
 
  */ 
+
+/*
+PASSING DATA Via PROPS
+frist we will divied it into compoents
+so unessaryliy you dont have to divied the things in components 
+insted do one thing very simple and stright forward
+if you can give tittle for it than do components else not requried 
+
+
+PROPS IS FUNCTION USED TO CONNECT THE CHILD NODE WITH THERE PARENT 
+SO here i have used something like Each time i have to create new item
+and it would be meesy so what we have come up with is 
+function Abc (props.example) => 
+{
+  }
+
+ <Abc><Abc> could directly defined
+ 
+and another method is array destructing here
+first let {foodItem}= props;
+*/
