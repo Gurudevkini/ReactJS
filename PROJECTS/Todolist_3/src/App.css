@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: #c12d08;
 }
 
@@ -15,7 +15,7 @@ h1 {
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
+} */
 
 input {
    widith:100;
@@ -31,5 +31,5 @@ margin: 5px;
 }
 .button1
 {
-  min-width: 50px;
+  min-width: 80px;
 }

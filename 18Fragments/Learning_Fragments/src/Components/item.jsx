@@ -1,4 +1,4 @@
-//import Styles from "./item.module.css";
+import Styles from "./item.module.css";
 //import Styles from "../styles/item.module.css";
 
 const Item = ({ foodItem }) => {

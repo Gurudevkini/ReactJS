@@ -1,0 +1,13 @@
+.Button_C
+{
+display:flex;
+justify-content: center;
+flex-wrap: wrap;
+color: rgb(32, 163, 120);
+}
+.Button 
+{
+  width:45px;
+   height: 45px;
+   margin: 3px;
+}

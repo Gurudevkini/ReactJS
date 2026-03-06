@@ -6,13 +6,13 @@ import React from "react";
 function App() {
     const fooditems = ['Gobi','Mysore pak',"Panner","Gobi-chilly"];
 const  fooditems1 =[];
-  return ( <>
-  
+  return ( 
+  <Container>
   <Errormsg items={fooditems1}></Errormsg>
   <Fooditems items={fooditems}></Fooditems>
+</Container>
 
 
- </>
 );
 }
 export default App;
