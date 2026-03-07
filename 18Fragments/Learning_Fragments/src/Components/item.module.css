@@ -1,3 +1,6 @@
+.button{
+  float:right;
+}
 /*
  So what happens is user not only using the CSS and Added !!
  if differnet componets have difference CSS than maintainablity is easy 

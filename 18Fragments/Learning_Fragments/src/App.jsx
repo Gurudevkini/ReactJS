@@ -3,16 +3,20 @@ import "./App.css";
 import Fooditems from "./Components/Fooditems";
 import Errormsg from "./Components/errorMessage";
 import React from "react";
+import Container from "./Components/container";
 function App() {
     const fooditems = ['Gobi','Mysore pak',"Panner","Gobi-chilly"];
 const  fooditems1 =[];
   return ( 
+    <>
   <Container>
   <Errormsg items={fooditems1}></Errormsg>
   <Fooditems items={fooditems}></Fooditems>
 </Container>
-
-
+{/* <Container>
+  <p> Hi, updated while doing this project i had my food?/..did you have yours?</p>
+</Container> */}
+</>
 );
 }
 export default App;
