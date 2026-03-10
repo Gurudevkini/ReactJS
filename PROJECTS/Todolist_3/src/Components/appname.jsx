@@ -1,5 +1,5 @@
 function AppName (){
-  return <h1>TO DO App</h1>
+  return <h1>Gurudev TO do app</h1>
 
 }
 export default AppName;
